@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Honey Store Rosario</title>
-    <link rel="stylesheet" href="css/indexStyle.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Honey Store - Inicio</title>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="container_nav">
-                <a href="index.html" class="opc_nav">Inicio</a>
-                <a href="pages/nosotros.html" class="opc_nav">Nosotros</a>
-                <a href="pages/contacto.html" class="opc_nav">Contacto</a>
-                <!-- Botón modo oscuro -->
-                <button id="toggleDark" class="dark-btn">Modo Oscuro</button>
-            </div>
-        </nav>
+      <nav>
+        <div class="container_nav">
+          <a href="/index.html" class="opc_nav">Inicio</a>
+          <a href="/pages/nosotros.html" class="opc_nav">Nosotros</a>
+          <a href="/pages/contacto.html" class="opc_nav">Contacto</a>
+          <button id="toggleDark" class="dark-btn">Modo Oscuro</button>
+        </div>
+
+        <div class="logo-container">
+          <img
+            src="/assets/images/logo.png"
+            alt="Logo Honey Store"
+            class="logo"
+          />
+        </div>
+      </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Bienvenido a Honey Store Rosario</h1>
-            <p>La mejor miel y artículos de apicultura directo a tu mesa 🍯🐝</p>
-        </section>
+    <section class="hero">
+      <h1>Bienvenidos a Honey Store</h1>
+      <p>
+        Los mejores productos de apicultura, directo de la colmena a tu mesa
+      </p>
+      <a href="/pages/productos.html" class="btn">Ver Productos</a>
+    </section>
 
-        <section class="productos" id="productos">
-            <h2>Nuestros Productos</h2>
-            <div class="productos-grid">
-                <div class="producto">
-                    <span>Miel Pura</span>
-                    <img src="assets/images/propiedades-de-la-miel.webp" alt="Miel pura">
-                </div>
-                <div class="producto">
-                    <span>Jalea Real</span>
-                    <img src="assets/images/jalea-real.jpg.webp" alt="Jalea Real">
-                </div>
-                <div class="producto">
-                    <span>Propóleo</span>
-                    <img src="assets/images/prop__leo_fuerte_125_fondoblanco-1053dddc472a7870ee17170044592803-1024-1024.webp" alt="Propóleo">
-                </div>
-                <div class="producto">
-                    <span>Cera</span>
-                    <img src="assets/images/cera-de-abeja-propiedades.webp" alt="Cera">
-                </div>
-                <div class="producto">
-                    <span>Indumentaria</span>
-                    <img src="assets/images/D_NQ_NP_973806-MLA89114757140_082025-O.webp" alt="Indumentaria">
-                </div>
-            </div>
-        </section>
-    </main>
+    <section class="productos-destacados">
+      <h2>Nuestros Productos Destacados</h2>
+      <div class="grid-productos">
+        <div class="card">
+          <img src="/assets/images/miel.webp" alt="Frasco de miel pura" />
+          <h3>Miel Pura</h3>
+          <p>100% natural, recolectada de colmenas locales.</p>
+          <a href="/pages/contacto.html" class="btn">Consultar</a>
+        </div>
+
+        <div class="card">
+          <img
+            src="/assets/images/jalea-real.webp"
+            alt="Envase de jalea real fresca"
+          />
+          <h3>Jalea Real</h3>
+          <p>Un suplemento nutritivo lleno de energía y vitalidad.</p>
+          <a href="/pages/contacto.html" class="btn">Consultar</a>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/propoleo.webp" alt="Frasco de propóleos" />
+          <h3>Propóleos</h3>
+          <p>Un aliado natural para fortalecer tus defensas.</p>
+          <a href="/pages/contacto.html" class="btn">Consultar</a>
+        </div>
+      </div>
+    </section>
 
     <footer>
-        <p>Honey Store Rosario © 2025 | Todos los derechos reservados</p>
+      <p>© 2025 Honey Store Rosario - Todos los derechos reservados</p>
+      <nav class="footer-nav">
+        <a href="/index.html">Inicio</a> |
+        <a href="/pages/nosotros.html">Nosotros</a> |
+        <a href="/pages/contacto.html">Contacto</a>
+      </nav>
+      <div class="redes">
+        <a href="#"
+          ><img src="/assets/icons/instagram.png" alt="Instagram"
+        /></a>
+        <a href="#"><img src="/assets/icons/facebook.png" alt="Facebook" /></a>
+      </div>
     </footer>
 
-    <script src="js/script.js"></script>
-</body>
+    <script src="/js/script.js"></script>
+  </body>
 </html>

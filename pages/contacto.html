@@ -1,79 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/assets/icons/favicon.ico" />
-  <link rel="stylesheet" href="/css/contacto.css" />
-  <title>Contacto - Honey Store</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+    <link rel="stylesheet" href="/css/contacto.css" />
+    <title>Contacto - Honey Store</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container_nav">
+          <a href="/index.html" class="opc_nav">Inicio</a>
+          <a href="/pages/nosotros.html" class="opc_nav">Nosotros</a>
+          <a href="/pages/contacto.html" class="opc_nav active">Contacto</a>
+          <button id="toggleDark" class="dark-btn">Modo Oscuro</button>
+        </div>
+        <img
+          src="/assets/images/logo.png"
+          alt="Logo Honey Store"
+          class="logo"
+        />
+      </nav>
+    </header>
 
-<header>
-  <nav>
-    <div class="container_nav">
-      <a href="/index.html" class="opc_nav">Inicio</a>
-      <a href="/pages/nosotros.html" class="opc_nav">Nosotros</a>
-      <a href="/pages/contacto.html" class="opc_nav active">Contacto</a>
-      <button id="toggleDark" class="dark-btn">Modo Oscuro</button>
-    </div>
-    <img src="/assets/images/logo.png" alt="Logo Honey Store" class="logo" />
-  </nav>
-</header>
+    <main>
+      <section class="hero">
+        <h1>Contacto</h1>
+        <p>
+          ¿Tenés dudas, consultas o querés hacer un pedido? ¡Escribinos y te
+          respondemos a la brevedad!
+        </p>
+      </section>
 
-<main>
-  <section class="hero">
-    <h1>Contacto</h1>
-    <p>¿Tenés dudas, consultas o querés hacer un pedido?  
-      ¡Escribinos y te respondemos a la brevedad!</p>
-  </section>
+      <section class="formulario">
+        <form
+          action="https://formspree.io/f/mandrjyw"
+          method="post"
+          class="contact-form"
+          id="formContacto"
+        >
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              required
+              minlength="3"
+              autocomplete="name"
+              aria-describedby="errorNombre"
+              aria-invalid="false"
+              placeholder="Ej: Juan Pérez"
+            />
+            <span class="error" id="errorNombre" aria-live="polite"></span>
+          </div>
 
-  <section class="formulario">
-    <form action="#" method="post" class="contact-form" id="formContacto">
-      <div class="campo">
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" required />
+          <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+              aria-describedby="errorEmail"
+              aria-invalid="false"
+              placeholder="tu@correo.com"
+            />
+            <span class="error" id="errorEmail" aria-live="polite"></span>
+          </div>
+
+          <div class="campo">
+            <label for="telefono">Teléfono</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="Ej: +54 341 1234567"
+              autocomplete="tel"
+              aria-describedby="errorTelefono"
+              aria-invalid="false"
+              pattern="^[+()\-.\s\d]{7,20}$"
+            />
+            <span class="error" id="errorTelefono" aria-live="polite"></span>
+          </div>
+
+          <div class="campo">
+            <label for="motivo">Motivo de contacto</label>
+            <select
+              id="motivo"
+              name="motivo"
+              required
+              aria-describedby="errorMotivo"
+              aria-invalid="false"
+            >
+              <option value="" selected disabled>Seleccioná una opción</option>
+              <option value="pedido">Consulta sobre un pedido</option>
+              <option value="productos">Información de productos</option>
+              <option value="otro">Otro</option>
+            </select>
+            <span class="error" id="errorMotivo" aria-live="polite"></span>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="6"
+              required
+              minlength="10"
+              maxlength="500"
+              aria-describedby="errorMensaje contador"
+              aria-invalid="false"
+              placeholder="Contanos tu consulta (10 a 500 caracteres)"
+            ></textarea>
+            <div class="ayuda">
+              <small id="contador">0/500</small>
+            </div>
+            <span class="error" id="errorMensaje" aria-live="polite"></span>
+          </div>
+
+          <div class="campo">
+            <label for="fecha">¿Cuándo preferís ser contactado?</label>
+            <input
+              type="date"
+              id="fecha"
+              name="fecha"
+              aria-describedby="errorFecha"
+              aria-invalid="false"
+            />
+            <span class="error" id="errorFecha" aria-live="polite"></span>
+          </div>
+
+          <div class="campo-check">
+            <input type="checkbox" id="suscripcion" name="suscripcion" />
+            <label for="suscripcion"
+              >Quiero recibir novedades y promociones</label
+            >
+          </div>
+
+          <button type="submit" class="btn-enviar">Enviar mensaje</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Honey Store Rosario - Todos los derechos reservados</p>
+      <nav class="footer-nav">
+        <a href="/index.html">Inicio</a> |
+        <a href="/pages/nosotros.html">Nosotros</a> |
+        <a href="/pages/contacto.html">Contacto</a>
+      </nav>
+      <div class="redes">
+        <a href="#"
+          ><img src="/assets/icons/instagram.png" alt="Instagram"
+        /></a>
+        <a href="#"><img src="/assets/icons/facebook.png" alt="Facebook" /></a>
       </div>
+    </footer>
 
-      <div class="campo">
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-
-      <div class="campo">
-        <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 341 1234567" />
-      </div>
-
-      <div class="campo">
-        <label for="motivo">Motivo de contacto</label>
-        <select id="motivo" name="motivo" required>
-          <option value="">Seleccioná una opción</option>
-          <option value="pedido">Consulta sobre un pedido</option>
-          <option value="productos">Información de productos</option>
-          <option value="otro">Otro</option>
-        </select>
-      </div>
-
-      <div class="campo">
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
-      </div>
-
-      <div class="campo-check">
-        <input type="checkbox" id="suscripcion" name="suscripcion" />
-        <label for="suscripcion">Quiero recibir novedades y promociones</label>
-      </div>
-
-      <button type="submit" class="btn-enviar">Enviar mensaje</button>
-    </form>
-  </section>
-</main>
-
-<footer>
-  <p>© 2025 Honey Store Rosario - Todos los derechos reservados</p>
-</footer>
-
-<script src="/js/contacto.js"></script>
-</body>
+    <script src="/js/contacto.js"></script>
+  </body>
 </html>
