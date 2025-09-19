@@ -1,104 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="#">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="js/script.js"></script>
-    <title>honey store</title>
-
+    <title>Honey Store Rosario</title>
+    <link rel="stylesheet" href="css/indexStyle.css">
 </head>
 <body>
     <header>
         <nav>
-        <div  class="container_nav">
-            <a href="index.html" class="opc_nav">Inicio</a>
-            <a href="/pages/productos.html" class="opc_nav">nosotros</a>
-            <a href="/pages/nosotros.html" class="opc_nav">productos</a>
-            <a href="/pages/contacto.html"class="opc_nav">Contacto</a>
-         
-        </div>
-
-        
-        <img src="" alt="logopa" class="logo">    
-        
-
+            <div class="container_nav">
+                <a href="index.html" class="opc_nav">Inicio</a>
+                <a href="pages/nosotros.html" class="opc_nav">Nosotros</a>
+                <a href="pages/contacto.html" class="opc_nav">Contacto</a>
+                <!-- Botón modo oscuro -->
+                <button id="toggleDark" class="dark-btn">Modo Oscuro</button>
+            </div>
         </nav>
-
-        
     </header>
 
     <main>
-
-        <section>
-            <div>   
-                <h1 class="titulo">honey</h1>
-                <p id="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cumque iure velit adipisci earum omnis, voluptatibus reprehenderit delectus hic corrupti. Sequi odit nam est numquam, sapiente placeat cumque soluta accusantium!.</p>
-
-            </div>
-            <div class="imagen">
-                 <img src="" alt="cabaña" >
-            </div>
+        <section class="hero">
+            <h1>Bienvenido a Honey Store Rosario</h1>
+            <p>La mejor miel y artículos de apicultura directo a tu mesa 🍯🐝</p>
         </section>
 
-
-        <section>
-
-            <h2>titulo 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis veniam provident maiores, vitae dolores odit obcaecati a dolorem laboriosam sequi perspiciatis ratione aspernatur. Odio cupiditate dolor eligendi minima ipsam nobis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem facere eligendi libero est corrupti sunt, ipsum optio deserunt aliquam quam, repudiandae harum. Nemo assumenda quam ipsam enim odit quisquam eius.lorem lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non id similique ipsa, incidunt quo voluptates consequuntur nostrum cupiditate provident error molestias esse dolorem! Ipsa, dicta eveniet ut mollitia deleniti sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolor hic corrupti quia, aliquid aspernatur ipsum beatae dicta quam quo odio aut porro reiciendis optio magnam quis vitae excepturi. Eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laudantium assumenda quos fugit distinctio ducimus minus! Temporibus inventore eum, quis vel nostrum quam voluptas, illo, ut iste sunt sint veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, rem temporibus excepturi repellat quisquam dignissimos ratione tenetur? Quas, minima amet labore tenetur quos unde mollitia nesciunt ipsam, cupiditate suscipit incidunt!</p>
-            <h2>titulo 3</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat adipisci eligendi hic mollitia quia ea vitae quae magnam, illum nobis! Quia modi voluptate quod earum voluptates autem quos. Totam, errorLorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis veniam provident maiores, vitae dolores odit obcaecati a dolorem laboriosam sequi perspiciatis ratione aspernatur. Odio cupiditate dolor eligendi minima ipsam nobis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem facere eligendi libero est corrupti sunt, ipsum optio deserunt aliquam quam, repudiandae harum. Nemo assumenda quam ipsam enim odit quisquam eius.lorem lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non id similique ipsa, incidunt quo voluptates consequuntur nostrum cupiditate provident error molestias esse dolorem! Ipsa, dicta eveniet ut mollitia deleniti sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolor hic corrupti quia, aliquid aspernatur ipsum beatae dicta quam quo odio aut porro reiciendis optio magnam quis vitae excepturi. Eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laudantium assumenda quos fugit distinctio ducimus minus! Temporibus inventore eum, quis vel nostrum quam voluptas, illo, ut iste sunt sint veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, rem temporibus excepturi repellat quisquam dignissimos ratione tenetur? Quas, minima amet labore tenetur quos unde mollitia nesciunt ipsam, cupiditate suscipit incidunt!!</p>
-
-         
+        <section class="productos" id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="productos-grid">
+                <div class="producto">
+                    <span>Miel Pura</span>
+                    <img src="assets/images/propiedades-de-la-miel.webp" alt="Miel pura">
+                </div>
+                <div class="producto">
+                    <span>Jalea Real</span>
+                    <img src="assets/images/jalea-real.jpg.webp" alt="Jalea Real">
+                </div>
+                <div class="producto">
+                    <span>Propóleo</span>
+                    <img src="assets/images/prop__leo_fuerte_125_fondoblanco-1053dddc472a7870ee17170044592803-1024-1024.webp" alt="Propóleo">
+                </div>
+                <div class="producto">
+                    <span>Cera</span>
+                    <img src="assets/images/cera-de-abeja-propiedades.webp" alt="Cera">
+                </div>
+                <div class="producto">
+                    <span>Indumentaria</span>
+                    <img src="assets/images/D_NQ_NP_973806-MLA89114757140_082025-O.webp" alt="Indumentaria">
+                </div>
+            </div>
         </section>
-        
-
     </main>
 
-
-    <footer class="footer">
-
-        <div class="container_footer">
-                <div class="inicio_footer">
-                    <h2>honey</h2>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dicta cupiditate, nobis nam similique sit tenetur, laborum velit odit recusandae qui omnis quam repudiandae veritatis deserunt placeat adipisci unde eum.
-                    </p>
-                </div>
-
-            
-                <div class="social_links">
-                    <a href="#" class="social_link"
-                      ><img
-                        src="/imagenes/git.png"
-                        alt="GitHub"
-                    /></a>
-                    <a href="#" class="social_link"
-                      ><img
-                        src="/imagenes/linkedin.png"
-                        alt="LinkedIn"
-                    /></a>
-                    <a href="#" class="social_link"
-                      ><img
-                        src="/imagenes/ig.png"
-                        alt="Instagram"
-                    /></a>
-                  </div>
-      
-                <div class="contact">
-                  <h3>Contacto</h3>
-                  <p>Email: honey@gmail.com</p>
-                  <p>Teléfono: +123 456 7890</p>
-                  <p>Dirección: pellegrini 1042</p>
-                </div>
-      
-              <div class="bottom">
-                <p>© 2025 Tienda de Miel. Todos los derechos reservados.</p>
-              </div>
-        </div>
-        
-            
+    <footer>
+        <p>Honey Store Rosario © 2025 | Todos los derechos reservados</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

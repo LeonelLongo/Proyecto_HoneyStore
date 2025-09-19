@@ -1,0 +1,143 @@
+:root {
+  --amarillo: #ffcc00;
+  --dorado: #e6b800;
+  --marron: #5a3e1b;
+  --blanco: #fffdf5;
+  --negro: #121212;
+  --gris: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--blanco);
+  color: var(--marron);
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: var(--amarillo);
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.container_nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.opc_nav {
+  text-decoration: none;
+  color: var(--marron);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.opc_nav:hover {
+  color: var(--blanco);
+}
+
+.hero {
+  text-align: center;
+  font-size: 30px;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, var(--amarillo), var(--dorado));
+  color: white;
+  border-bottom: 5px solid var(--marron);
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+.producto {
+  background: var(--amarillo);
+  border: 2px solid var(--dorado);
+  border-radius: 14px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.producto span {
+  display: block;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--dorado);
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background: var(--amarillo);
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-weight: bold;
+  color: var(--marron);
+}
+
+.dark-btn {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: var(--marron);
+  color: var(--blanco);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-btn:hover {
+  background: var(--dorado);
+  color: var(--marron);
+}
+
+.dark-mode {
+  background: var(--negro);
+  color: var(--blanco);
+}
+
+.dark-mode header {
+  background: var(--gris);
+}
+
+.dark-mode .opc_nav {
+  color: var(--amarillo);
+}
+
+.dark-mode .opc_nav:hover,
+.dark-mode .opc_nav.active {
+  color: var(--blanco);
+}
+
+.dark-mode .hero {
+  background: var(--gris);
+  color: var(--amarillo);
+}
+
+.dark-mode .contact-form {
+  background: var(--gris);
+  color: var(--blanco);
+}
+
+.dark-mode footer {
+  background: var(--gris);
+  color: var(--amarillo);
+}
+

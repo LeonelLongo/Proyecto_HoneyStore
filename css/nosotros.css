@@ -1,0 +1,179 @@
+:root {
+  --amarillo: #ffcc00;
+  --dorado: #e6b800;
+  --marron: #5a3e1b;
+  --blanco: #fffdf5;
+  --negro: #121212;
+  --gris: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--blanco);
+  color: var(--marron);
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: var(--amarillo);
+  padding: 10px;
+}
+
+.container_nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.opc_nav {
+  text-decoration: none;
+  color: var(--marron);
+  font-weight: bold;
+}
+
+.opc_nav:hover, .opc_nav.active {
+  color: var(--blanco);
+}
+
+.logo {
+  display: block;
+  margin: 10px auto 0 auto;
+  height: 60px;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero .sub {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about-text {
+  max-width: 700px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: var(--amarillo);
+  margin-bottom: 15px;
+}
+
+.footer {
+  background: var(--amarillo);
+  color: var(--marron);
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.container_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.footer h2, .footer h3 {
+  margin-bottom: 10px;
+}
+
+.social_links {
+  display: flex;
+  gap: 15px;
+}
+
+.social_link img {
+  width: 30px;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  padding-top: 10px;
+  width: 100%;
+}
+
+#toggle-dark {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--amarillo);
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.dark-btn {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: var(--marron);
+  color: var(--blanco);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-btn:hover {
+  background: var(--dorado);
+  color: var(--marron);
+}
+
+
+.dark-mode {
+  background: var(--negro);
+  color: var(--blanco);
+}
+
+.dark-mode header {
+  background: var(--gris);
+}
+
+.dark-mode .opc_nav {
+  color: var(--amarillo);
+}
+
+.dark-mode .opc_nav:hover,
+.dark-mode .opc_nav.active {
+  color: var(--blanco);
+}
+
+.dark-mode .hero {
+  background: var(--gris);
+  color: var(--amarillo);
+}
+
+.dark-mode .contact-form {
+  background: var(--gris);
+  color: var(--blanco);
+}
+
+.dark-mode footer {
+  background: var(--gris);
+  color: var(--amarillo);
+}
+

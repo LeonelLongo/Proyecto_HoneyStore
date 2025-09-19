@@ -1,0 +1,181 @@
+:root {
+  --amarillo: #ffcc00;
+  --dorado: #e6b800;
+  --marron: #5a3e1b;
+  --blanco: #fffdf5;
+  --negro: #121212;
+  --gris: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--blanco);
+  color: var(--marron);
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: var(--amarillo);
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.container_nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.opc_nav {
+  text-decoration: none;
+  color: var(--marron);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.opc_nav:hover,
+.opc_nav.active {
+  color: var(--blanco);
+}
+
+.logo {
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: var(--dorado);
+  color: var(--blanco);
+  border-radius: 0 0 20px 20px;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.contact-form {
+  background: var(--blanco);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 100%;
+  transition: background 0.3s, color 0.3s;
+}
+
+.campo {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 10px;
+  border: 1px solid var(--dorado);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: var(--amarillo);
+  box-shadow: 0 0 5px var(--amarillo);
+}
+
+.campo-check {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dark-btn {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: var(--marron);
+  color: var(--blanco);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-btn:hover {
+  background: var(--dorado);
+  color: var(--marron);
+}
+
+.btn-enviar {
+  background: var(--amarillo);
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.btn-enviar:hover {
+  background: var(--dorado);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--amarillo);
+  color: var(--marron);
+  margin-top: 40px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background: var(--negro);
+  color: var(--blanco);
+}
+
+.dark-mode header {
+  background: var(--gris);
+}
+
+.dark-mode .opc_nav {
+  color: var(--amarillo);
+}
+
+.dark-mode .opc_nav:hover,
+.dark-mode .opc_nav.active {
+  color: var(--blanco);
+}
+
+.dark-mode .hero {
+  background: var(--gris);
+  color: var(--amarillo);
+}
+
+.dark-mode .contact-form {
+  background: var(--gris);
+  color: var(--blanco);
+}
+
+.dark-mode footer {
+  background: var(--gris);
+  color: var(--amarillo);
+}
